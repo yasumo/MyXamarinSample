@@ -18,6 +18,11 @@ EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		XFApp\XFApp\XFApp.projitems*{4322957a-e69c-4537-bf2d-9a3a93bb227f}*SharedItemsImports = 13
+		XFApp\XFApp\XFApp.projitems*{47d35dab-a6c7-4cd9-b74e-6d4d7ce26cae}*SharedItemsImports = 4
+		XFApp\XFApp\XFApp.projitems*{5d35bb38-96d6-4bcc-ae7d-b56d5ba2cfe5}*SharedItemsImports = 4
+		XFApp\XFApp\XFApp.projitems*{7ad18e4d-bc98-4411-b8c0-ceda266c3b3c}*SharedItemsImports = 4
+		XFApp\XFApp\XFApp.projitems*{f2f1a819-8943-4206-928a-db28948eed08}*SharedItemsImports = 4
+		XFApp\XFApp\XFApp.projitems*{f5ce9801-9cbc-45a1-86c9-c1068059bb5e}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU

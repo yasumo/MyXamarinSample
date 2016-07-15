@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Xamarin.Forms;
+using XFApp.View;
 
 namespace XFApp
 {
@@ -11,19 +12,10 @@ namespace XFApp
 	{
 		public App ()
 		{
-			// The root page of your application
-			MainPage = new ContentPage {
-				Content = new StackLayout {
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
-		}
+            // The root page of your application
+            MainPage = new FormPage();
+
+        }
 
 		protected override void OnStart ()
 		{
