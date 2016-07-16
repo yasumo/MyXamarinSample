@@ -15,6 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Model\Service\PropertyService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\BindableBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FormPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\RelayCommand.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)View\FormPage.xaml.cs">
       <DependentUpon>FormPage.xaml</DependentUpon>
       <SubType>Code</SubType>

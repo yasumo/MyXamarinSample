@@ -8,6 +8,14 @@ namespace XFApp.ViewModel
 {
     public class FormPageViewModel : BindableBase
     {
+        string message;
+
+        public string Message
+        {
+            get { return message; }
+            set { this.SetProperty(ref this.message, value); }
+        }
+
         string name;
 
         public string Name
@@ -25,9 +33,26 @@ namespace XFApp.ViewModel
 
 
         public FormPageViewModel() {
+            PropertyChanged += (s,e)=>{ ExecuteCommand.RaiseCanExecuteChanged(); } ;
             PropertyChanged += AgeChanged;
             PropertyChanged += NameChanged;
+            ExecuteCommand =
+                new RelayCommand(
+                // 実行内容
+                () => { Message = "ボタンが押されましたよ！"; },
+                // 実行可否判定
+                () => { return CanExecute(); }
+            );
         }
+
+        public RelayCommand ExecuteCommand { get; }
+
+
+        private bool CanExecute()
+        {
+            return !string.IsNullOrEmpty(name) && 10 <= age && age<=100;
+        }
+
 
         private void NameChanged(object sender, PropertyChangedEventArgs e)
         {

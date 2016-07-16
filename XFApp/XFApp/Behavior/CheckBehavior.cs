@@ -25,7 +25,6 @@ namespace XFApp.Behavior
         {
             if (OtherView != null) OtherView.IsEnabled = e.NewTextValue?.Length >= MinLength;
         }
-
     }
 
     public class AutoTabBehavior : Behavior<Entry>

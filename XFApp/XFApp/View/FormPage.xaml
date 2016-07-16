@@ -13,6 +13,8 @@
         </Entry.Behaviors>
       </Entry>
       <Entry Text="{Binding Age}" x:Name="AgeEntry" />
+      <Label Text="{Binding Message}"/>
+      <Button Text="Execute" Command="{Binding ExecuteCommand}"/>
     </StackLayout.Children>
   </StackLayout>
 </ContentPage>
